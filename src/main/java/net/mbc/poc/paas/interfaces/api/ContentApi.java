@@ -13,5 +13,10 @@ public class ContentApi {
     public @ResponseBody CreateContentResponse createContent() {
         return new CreateContentResponse();
     }
+
+    @RequestMapping(value = "/api/contents/{id}", method = RequestMethod.GET)
+    public @ResponseBody GetContentResponse getContent(@PathVariable("id") String id) {
+        return new GetContentResponse(id);
+    }
 }
 
