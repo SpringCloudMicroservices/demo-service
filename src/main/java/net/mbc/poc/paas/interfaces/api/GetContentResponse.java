@@ -7,6 +7,6 @@ public class GetContentResponse {
     public String message;
 
     public GetContentResponse(String id) {
-        this.message = "Content #" + id;
+        this.message = "Content, updated #" + id;
     }
 }
