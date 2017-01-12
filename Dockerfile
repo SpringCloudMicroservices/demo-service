@@ -8,7 +8,7 @@ WORKDIR /src
 ENV GRADLE_USER_HOME=/src
 RUN gradle build -x test
 
-RUN mv build/libs/demo-service-1.0.jar /opt/app.jar && \
+RUN mv build/libs/demo-service-1.0.0.jar /opt/app.jar && \
     rm -rf /src && \
     rm -rf /usr/local/gradle
 
